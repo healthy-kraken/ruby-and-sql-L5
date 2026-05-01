@@ -5,7 +5,7 @@
 
 # **************************
 # DON'T CHANGE OR MOVE
-Salesperson.destroy_all
+Company.destroy_all
 # **************************
 
 # Lab 2: Models
@@ -18,6 +18,7 @@ Salesperson.destroy_all
 
 # 1a. check out the schema file
 # 1b. check out the model file
+
 
 # 2. insert 1-2 rows in salespeople table.
 
@@ -35,3 +36,34 @@ Salesperson.destroy_all
 # Salespeople: 2
 # Ben Block
 # Brian Eng
+
+# 1. Create 2 new Companies in a new state
+
+basecamp = Company.new
+basecamp ["name"] = "basecamp"
+basecamp ["city"] = "city A"
+basecamp ["state"] = "state A"
+basecamp ["url"] = "basecamp.com lol"
+basecamp.save
+p basecamp
+
+# 2. write code to display each of the company's new name, city, state, & url
+
+#_______________________
+
+
+# All Companies: 2
+# comp..
+# comp..
+
+p "All companies: #{Company.all.count}"
+companies = Company.all
+
+for company in companies
+
+  puts "#{company["name"]} - #{company["url"]}"
+  
+  # p company["name"]
+  # p company["url"]
+end
+

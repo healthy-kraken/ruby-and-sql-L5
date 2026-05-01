@@ -10,6 +10,7 @@ Contact.destroy_all
 
 # - Insert and read contact data for companies in the database
 
+
 # 1. insert new rows in the contacts table with relationship to a company
 
 # 2. How many contacts work at Apple?
