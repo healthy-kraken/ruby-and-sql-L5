@@ -16,17 +16,19 @@ Company.destroy_all
 
 # 2. insert new rows in companies table
 
-new_company = Company.new
+puts "There are #{Company.all.count} companies."
+
+apple = Company.new
 #p new_company
 
-new_company["name"] = "Apple"
-new_company["city"] = "Cupertino"
-new_company["state"] = "CA"
-new_company["url"] = "https://apple.com"
+apple["name"] = "Apple"
+apple["city"] = "Cupertino"
+apple["state"] = "CA"
+apple["url"] = "https://apple.com"
 #p new_company
 
-new_company.save
-p new_company
+apple.save
+p apple
 
 new_company = Company.new
 new_company["name"] = "Amazon"

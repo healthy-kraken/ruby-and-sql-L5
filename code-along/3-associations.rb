@@ -8,6 +8,13 @@
 Contact.destroy_all
 # **************************
 
+brother = Contact.new
+brother["first name"]= "Tomas"
+brother["last name"]= "Serna"
+brother["email"]= "brother@hotmail.com"
+
+brother.save
+p brother
 # - Insert and read contact data for companies in the database
 
 
